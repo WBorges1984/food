@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/global.css'
 import Router from './router';
+import { CartProvider } from './contexts/cart-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router />
+  <CartProvider>
+    <Router />
+  </CartProvider>
 );
