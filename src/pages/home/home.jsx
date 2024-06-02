@@ -37,7 +37,7 @@ useEffect(()=>{
                                     foto={prod.foto} />
           })
         }
-        
+        {console.log('url: '+ process.env.REACT_APP_URL_SERVER)}
     </div>
     
   
