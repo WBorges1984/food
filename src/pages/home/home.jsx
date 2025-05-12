@@ -12,7 +12,7 @@ useEffect(()=>{
     setProdutos(res.data)
   })
   .catch((err)=>{
-    alert("Erro ao carregar produtos")
+    alert("Erro ao carregar produtos: " + err)
   })
 },[])
 
