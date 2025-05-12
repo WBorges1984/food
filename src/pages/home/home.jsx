@@ -3,17 +3,22 @@ import Navbar from '../../components/navbar/Navbar'
 import ProdutoVitrine from '../../components/produto-vitrine/ProdutoVitrine'
 
 import api from '../../services/api.js';
+import { itens } from '../../dados.js';
 
 export default function Home() {
 const [produtos, setProdutos] = useState([]);
+// useEffect(()=>{
+//   api.get('/produtos')
+//   .then((res)=>{
+//     setProdutos(res.data)
+//   })
+//   .catch((err)=>{
+//     alert("Erro ao carregar produtos: " + err)
+//   })
+// },[])
+
 useEffect(()=>{
-  api.get('/produtos')
-  .then((res)=>{
-    setProdutos(res.data)
-  })
-  .catch((err)=>{
-    alert("Erro ao carregar produtos: " + err)
-  })
+  setProdutos(itens)
 },[])
 
   return (<>

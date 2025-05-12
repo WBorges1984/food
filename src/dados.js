@@ -1,6 +1,6 @@
 
 
-const produtos = [
+const itens = [
     {
         id: 1, 
         nome: "Spicy Burguer", 
@@ -80,4 +80,4 @@ const carrinho = [
     }
 ]
 
-export {produtos, pedidos, carrinho}
+export {itens, pedidos, carrinho}
